@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-post, .blog-list article, .blog-post, .about-content, .contact-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-list article:last-child, .featured-post:last-child {
+    border-bottom: none;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.image-slider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-container img {
+    width: 100%;
+    flex-shrink: 0;
+    display: none; /* Initially hide all images */
+}
+
+.slider-container img:first-child {
+    display: block; /* Show the first image */
+}
+
+.slider-controls button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-form .hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .slider-container {
+        width: 95%;
+    }
+}
